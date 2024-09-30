@@ -15,16 +15,18 @@ body {
 
 /* Contêiner centralizado */
 .container {
-    position: relative;
+    display: flex;
+    flex-direction: column; /* Garante que tudo fique em coluna */
+    align-items: center; /* Centraliza horizontalmente */
     color: #000; /* Cor do texto */
     font-size: 70px; /* Tamanho do texto */
     margin: 0; /* Remove margem padrão */
-    font-family: 'Minecraft', sans-serif;
 }
 
 /* Estilos do texto com efeito de revelação */
 .reveal-text {
     position: relative; /* Necessário para o pseudo-elemento */
+    display: inline-flex; /* Torna o texto e efeito um único bloco */
 }
 
 /* Antes do hover, cria um efeito de máscara sobre o texto */
@@ -49,7 +51,6 @@ body {
 /* Revelação com pseudo-elemento */
 .reveal-text:hover::before {
     transform: scaleX(1); /* Revela a linha */
-    transform-origin: left; /* Origem da transformação ao passar o mouse */
 }
 
 /* Estilos para os ícones */
