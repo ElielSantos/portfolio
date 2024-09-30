@@ -37,7 +37,7 @@ body {
     height: 100%; /* Cobre todo o texto */
     background-color: #fff; /* Cor da linha */
     transform: translateY(-100%); /* Inicialmente invisível (acima do texto) */
-    transition: transform 1.5s ease-in-out; /* Transição suave */
+    transition: opacity 1.5s ease-in-out; /* Transição suave */
 }
 
 /* Efeito ao passar o mouse (hover) */
