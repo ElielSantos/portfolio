@@ -30,7 +30,7 @@ body {
 }
 
 /* Antes do hover, cria um efeito de máscara sobre o texto */
-.reveal-text::before {
+.reveal-text {
     content: '';
     position: absolute;
     left: 0;
