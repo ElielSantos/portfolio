@@ -32,7 +32,7 @@ body {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -3px; /* Corrigido para ter unidade */
+    bottom: 0px; /* Corrigido para ter unidade */
     width: 100%;
     height: 120px; /* Altura da linha */
     background-color: #fff; /* Cor da linha */
