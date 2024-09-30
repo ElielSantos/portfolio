@@ -32,9 +32,9 @@ body {
     content: '';
     position: absolute;
     left: 0;
-    bottom: 1px; /* Corrigido para ter unidade */
+    bottom: 0; /* Ajustado para alinhar com a parte inferior do texto */
     width: 100%;
-    height: 120px; /* Altura da linha */
+    height: 100%; /* Altura do pseudo-elemento igual à do texto */
     background-color: #fff; /* Cor da linha */
     transform: scaleX(0); /* Inicialmente invisível */
     transform-origin: left; /* Origem da transformação */
@@ -49,7 +49,6 @@ body {
 /* Revelação com pseudo-elemento */
 .reveal-text:hover::before {
     transform: scaleX(1); /* Revela a linha */
-    transform-origin: left; /* Origem da transformação ao passar o mouse */
 }
 
 /* Estilos para os ícones */
