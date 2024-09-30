@@ -32,12 +32,13 @@ body {
     content: '';
     position: absolute;
     left: 0;
-    top: 0; /* Começa na parte superior */
+    bottom: -3px; /* Corrigido para ter unidade */
     width: 100%;
-    height: 100%; /* Cobre todo o texto */
+    height: 120px; /* Altura da linha */
     background-color: #fff; /* Cor da linha */
-    transform: translateY(-100%); /* Inicialmente invisível (acima do texto) */
-    transition: opacity 1.5s ease-in-out; /* Transição suave */
+    transform: scaleX(0); /* Inicialmente invisível */
+    transform-origin: left; /* Origem da transformação */
+    transition: transform 1.5s ease-in-out; /* Transição suave */
 }
 
 /* Efeito ao passar o mouse (hover) */
