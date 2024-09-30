@@ -27,7 +27,6 @@ body {
 .reveal-text {
     position: relative; /* Necessário para o pseudo-elemento */
     display: inline-flex; /* Torna o texto e efeito um único bloco */
-    overflow: hidden; /* Esconde texto quando o efeito está ativo */
 }
 
 /* Antes do hover, cria um efeito de máscara sobre o texto */
